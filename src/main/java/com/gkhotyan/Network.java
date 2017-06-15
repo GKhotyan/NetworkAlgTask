@@ -8,7 +8,7 @@ public class Network {
      * Each site is initially in its own component.
      *
      * @param  n the number of elements
-     * @throws IllegalArgumentException if {@code n <= 0}
+     * @throws IllegalArgumentException if n <= 0
      */
     public Network(int n) {
         if(n<1)
@@ -20,11 +20,11 @@ public class Network {
     }
 
     /**
-     * Returns the component identifier for the component containing site {@code p}.
+     * Returns the component identifier for the component containing element  p.
      *
      * @param  p the integer representing one object
-     * @return the component identifier for the component containing site {@code p}
-     * @throws IllegalArgumentException unless {@code 0 <= p <= n}
+     * @return the component identifier for the component containing element  p
+     * @throws IllegalArgumentException unless 0 <= p <= n
      */
     private int find(int p) throws IllegalArgumentException {
         validate(p);

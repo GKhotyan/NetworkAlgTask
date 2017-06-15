@@ -6,7 +6,7 @@ import static org.junit.Assert.assertFalse;
 import org.junit.Test;
 
 /**
- * @author georgiy.hotiyan@masterdata.ru
+ * @author georgiy.hotiyan
  */
 public class NetworkTest {
 
@@ -16,6 +16,7 @@ public class NetworkTest {
         network.connect(1 , 2);
         assertTrue(network.query(1, 2));
 
+        network.connect(1 , 2);
         network.connect(2 , 4);
         assertTrue(network.query(1, 4));
 
