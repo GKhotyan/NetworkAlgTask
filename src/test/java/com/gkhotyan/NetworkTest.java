@@ -25,7 +25,7 @@ public class NetworkTest {
 
     @Test(expected=IllegalArgumentException.class)
     public void testWrongInitialization() {
-        Network network = new Network(-7);
+        Network network = new Network(-8);
     }
 
     @Test(expected=IllegalArgumentException.class)
